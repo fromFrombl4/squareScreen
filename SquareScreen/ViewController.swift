@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var placeView: UIView!
     @IBOutlet private weak var counterStepper: UIStepper!
     @IBOutlet private weak var numberLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
     
     private var labelPadding = 10
 
@@ -80,6 +81,12 @@ class ViewController: UIViewController {
             }
         }
     }
+    @IBAction func pressedBackButton(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }
 
 private extension UIStepper {

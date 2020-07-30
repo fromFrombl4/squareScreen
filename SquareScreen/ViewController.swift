@@ -83,7 +83,8 @@ class ViewController: UIViewController {
     }
     @IBAction func pressedBackButton(_ sender: UIButton) {
         
-        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     
